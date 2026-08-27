@@ -4,8 +4,8 @@ A focused AI productivity dashboard built with **TanStack Start**, **React**, an
 
 ## Live Demo
 
-- Preview: `[https://<your-preview-url>.lovable.app](https://preview--smarter-admin-assist.lovable.app/)`
-- Published: `https://<your-published-url>.lovable.app`
+- Preview: `https://preview--smarter-admin-assist.lovable.app/`
+- Published: `https://smarter-admin-assist.lovable.app`
 
 ## Features
 
