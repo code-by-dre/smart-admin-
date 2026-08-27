@@ -52,11 +52,17 @@ src/
 ├── routes/ # TanStack file-based routes
 
 │ ├── __root.tsx # Root layout, error/not-found boundaries
+
 │ ├── index.tsx # Smart Email Generator
+
 │ ├── meeting-notes.tsx # Meeting Notes Summarizer
+
 │ ├── task-planner.tsx # AI Task Planner
+
 │ ├── research.tsx # AI Research Assistant
+
 │ └── chatbot.tsx # Assistant Chat
+
 └── styles.css # Global theme & Tailwind config
 
 
