@@ -1,4 +1,3 @@
-# smart-admin-
 # Smart Admin Assist — AI Workplace Productivity
 
 A focused AI productivity dashboard built with **TanStack Start**, **React**, and **Tailwind CSS**. Smart Admin Assist bundles five workplace tools — email drafting, meeting notes summarisation, task planning, research briefing, and a general assistant chat — behind a single, calm, editorial-style UI.
