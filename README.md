@@ -31,3 +31,105 @@ A focused AI productivity dashboard built with **TanStack Start**, **React**, an
 | Icons / UI primitives | shadcn/ui-style components |
 
 ## Project Structure
+
+src/
+├── components/
+│ ├── AppShell.tsx # Shared page shell (eyebrow, title, layout)
+│ ├── GenerateWorkspace.tsx # Shared input → prompt → output pattern
+│ └── ui/ # UI primitives (e.g. sonner Toaster)
+├── lib/
+│ ├── ai.functions.ts # Server functions (chatReply, etc.)
+│ ├── tools.ts # Tool metadata (eyebrow, title) per route
+│ └── lovable-error-reporting.ts
+├── routes/ # TanStack file-based routes
+│ ├── __root.tsx # Root layout, error/not-found boundaries
+│ ├── index.tsx # Smart Email Generator
+│ ├── meeting-notes.tsx # Meeting Notes Summarizer
+│ ├── task-planner.tsx # AI Task Planner
+│ ├── research.tsx # AI Research Assistant
+│ └── chatbot.tsx # Assistant Chat
+└── styles.css # Global theme & Tailwind config
+
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v20+ recommended)
+- Bun or npm
+
+### Install Dependencies
+
+```sh
+bun install
+# or
+npm install
+```
+
+### Run Development Server
+
+```sh
+bun run dev
+# or
+npm run dev
+```
+
+Open `http://localhost:8080` in your browser.
+
+### Build for Production
+
+```sh
+bun run build
+# or
+npm run build
+```
+
+## Deployment
+
+This project is configured for Lovable Cloud / edge deployment. Connect your GitHub repository in the Lovable editor to enable automatic deployments on every push.
+
+## Customization
+
+- **Tools**: Add or edit entries in `src/lib/tools.ts` to change the eyebrow/title shown per route.
+- **Prompts & fields**: Each tool route (`index.tsx`, `meeting-notes.tsx`, `task-planner.tsx`, `research.tsx`) defines its own `EMPTY` field state and form layout — edit these to change inputs.
+- **AI logic**: Server-side generation logic lives in `src/lib/ai.functions.ts`.
+- **Theme**: Adjust design tokens and colors in `src/styles.css`.
+- **Routes**: Add new pages under `src/routes/` using TanStack Router file-based conventions.
+
+## Disclaimer
+
+AI-generated responses can be wrong or outdated. Verify anything important before acting on it, and keep confidential data out of prompts.
+
+## License
+
+MIT — feel free to fork, remix, and ship your own version.
+
+---
+
+Built with [Lovable](https://lovable.dev).
+
+## Build with Lovable
+
+Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+
+- **Ship faster**: describe what you want to build and Lovable handles the code.
+- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
+- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+
+## Development
+
+Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+
+```sh
+git clone <this-repository-url>
+cd <repository-name>
+npm i
+npm run dev
+```
+
+## Built with
+
+- TanStack Start
+- TypeScript
+- React
+- Tailwind CSS
